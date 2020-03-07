@@ -36,6 +36,11 @@
 bulletin_sn=46851
 
 該改 `<h5>` 的位置
+
+學生宿舍進住報到防疫公告
+
+修改 `<h5>` 位置
+
 ## 目標二
 
 設定「[定位點](https://www.handicap-free.nat.gov.tw/Questions/Detail/82?Category=33)」。
