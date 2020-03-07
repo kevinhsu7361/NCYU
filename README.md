@@ -17,8 +17,25 @@
 1. 安裝 Freego
 2. 修改檢測有錯誤之處，開啟此[網頁](https://www.handicap-free.nat.gov.tw/Accessible/Detail/144?Category=46)，利用 `Ctrl + F` 搜尋檢測代碼。
 
-- 20200305：XH1030103
-- 20200306：
+- 20200305：search
+- 20200306：news_sn=3588
+
+(1) 少了結束標籤 
+
+```html
+</a>
+```
+
+(2)少了 `title` 屬性
+
+```html
+<a title="主題"><span>範例</span></a>
+```
+- 20200307
+
+bulletin_sn=46851
+
+該改 `<h5>` 的位置
 ## 目標二
 
 設定「[定位點](https://www.handicap-free.nat.gov.tw/Questions/Detail/82?Category=33)」。
