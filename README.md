@@ -16,6 +16,8 @@
 
 1. 安裝 Freego
 
+XH1080400
+XH1080401
 然後 ... 這個軟體 ... 希望能一次把錯誤全部報完，我改完了某個錯誤，他又跳出了新的錯誤 ... 。
 
 2. 修改檢測有錯誤之處，開啟此[網頁](https://www.handicap-free.nat.gov.tw/Accessible/Detail/144?Category=46)，利用 `Ctrl + F` 搜尋檢測代碼。
