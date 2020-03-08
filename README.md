@@ -15,6 +15,9 @@
 ## 目標一
 
 1. 安裝 Freego
+
+然後 ... 這個軟體 ... 希望能一次把錯誤全部報完，我改完了某個錯誤，他又跳出了新的錯誤 ... 。
+
 2. 修改檢測有錯誤之處，開啟此[網頁](https://www.handicap-free.nat.gov.tw/Accessible/Detail/144?Category=46)，利用 `Ctrl + F` 搜尋檢測代碼。
 
 - 20200305：search
@@ -37,7 +40,7 @@ bulletin_sn=46851
 
 該改 `<h5>` 的位置
 
-學生宿舍進住報到防疫公告
+bulletin
 
 修改 `<h5>` 位置
 
