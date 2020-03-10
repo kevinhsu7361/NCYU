@@ -18,7 +18,10 @@
 2. 打開 Freego，輸入網址，並且選擇「單一網頁」，「AA」等級。
 3. 可以開啟此[網頁](https://www.handicap-free.nat.gov.tw/Accessible/Detail/144?Category=46)，利用 `Ctrl + F` 搜尋檢測代碼，查看詳細原因。
 
-附註：Freego **無法**一次把相同的錯誤告訴我們。( 例如：XH1080400，XH1080401 )
+附註：
+
+1. Freego **無法**一次把相同的錯誤告訴我們。( 例如：XH1080400，XH1080401 )
+2. 標籤錯誤也會造成，例如少了結尾標籤，或者 `inline tag` + `block tag` 等等。
 
 ## Week 1 進度 ( 03/02 ~ 03/08 )
 
