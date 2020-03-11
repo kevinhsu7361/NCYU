@@ -1,5 +1,7 @@
 ## 前言
 
+## 合作模式
+
 - [NCYU 網頁資料夾](https://webhd.ncyu.edu.tw/share.cgi?ssid=07WBEfX)
 - [無障礙網頁相關規定](https://www.handicap-free.nat.gov.tw/)
 - [受檢測的網頁](https://kevinhsu7361.github.io/NCYU/index2021_v2_test.html)
