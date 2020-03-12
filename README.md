@@ -1,45 +1,41 @@
-## 前言
+## 檢測流程
 
-## 合作模式
+- 以 [GitHub Pages](https://pages.github.com/) 搭建環境
+- 從[資料夾](https://webhd.ncyu.edu.tw/share.cgi?ssid=07WBEfX)抓取最新版本的 html
+- 打開 [Freego](https://www.handicap-free.nat.gov.tw/Download/Detail/1375?Category=52)，輸入網址，並且選擇**單一網頁**，**AA**等級。
+- 使用 [Visual Studio Code](https://code.visualstudio.com/) 修改 html
+- 目前的檢測版本：[v7](https://kevinhsu7361.github.io/NCYU/index2021_v7.html)
 
-- [NCYU 網頁資料夾](https://webhd.ncyu.edu.tw/share.cgi?ssid=07WBEfX)
-- [無障礙網頁相關規定](https://www.handicap-free.nat.gov.tw/)
-- [受檢測的網頁](https://kevinhsu7361.github.io/NCYU/index2021_v2_test.html)
+## flexslider
 
-## 註解範例
+flexslider_new
+
+## Freego
+
+1. 可以開啟此[網頁](https://www.handicap-free.nat.gov.tw/Accessible/Detail/144?Category=46)，利用 `Ctrl + F` 搜尋檢測代碼，查看詳細原因。
+2. Freego **無法**一次把相同的錯誤告訴我們。( 例如：XH1080400，XH1080401 )
+3. 標籤錯誤也會造成，例如少了結尾標籤，或者 `inline tag` + `block tag` 等等。
+
+## 協作方式
+
+每成功修改掉相似的 bug，就建立一個新版本。
+
+## 註解方式
+
+以**日期**的形式註解。
 
 ```html
-<!--20200305 search 加label 開始-->
+<!--20200305-->
 <label for="search"></label>
-<!--20200305 search 加label 結束-->
 ```
 
-## 環境安裝
-
-1. 安裝 [Freego](https://www.handicap-free.nat.gov.tw/Download/Detail/1375?Category=52)
-2. 打開 Freego，輸入網址，並且選擇「單一網頁」，「AA」等級。
-3. 可以開啟此[網頁](https://www.handicap-free.nat.gov.tw/Accessible/Detail/144?Category=46)，利用 `Ctrl + F` 搜尋檢測代碼，查看詳細原因。
-
-附註：
-
-1. Freego **無法**一次把相同的錯誤告訴我們。( 例如：XH1080400，XH1080401 )
-2. 標籤錯誤也會造成，例如少了結尾標籤，或者 `inline tag` + `block tag` 等等。
-
-## Week 1 進度 ( 03/02 ~ 03/08 )
-
-### 20200305
-
-search 添加 `<label>`。
+## 修改 bug 的歷史
 
 ### 20200306
 
-news_sn=3588,3589 等等的
+#### news_sn=3588,3589 等等的
 
-(1) 超連結少了結束標籤 
-
-```html
-</a>
-```
+(1) 超連結少了結束標籤 `</a>`
 
 (2)超連結少了 `title` 屬性
 
@@ -49,23 +45,25 @@ news_sn=3588,3589 等等的
 
 ### 20200307
 
-bulletin_sn=46851
+#### bulletin_sn=46851 等等
 
 該改 `<h5>` 的位置
 
-### 20200308
+### 20200309
 
-其他 bulletin 相關等等的
+#### 其他 bulletin 相關等等的
 
 也是修改 `<h5>` 位置
 
-## 附註
+### 20200310
 
-由於要改的地方實在太多了，所以我只有以日期的方式註解，像是 `<!--20200308-->`，建議學姊開啟**文字編輯器**，利用搜尋的方式，會比較好找到需修改之處。
+#### bulletin_sn=3595,3594 等等的
+
+超連結少了結束標籤 `</a>`
 
 ---
 
-## Week 2 預計進度 ( 03/09 ~ 03/15 )
+## 預計進度
 
 設定「[定位點](https://www.handicap-free.nat.gov.tw/Questions/Detail/82?Category=33)」。
 
