@@ -1,10 +1,14 @@
+## 參考教學
+
+[iT 邦幫忙 ─ 實踐無障礙網頁設計](https://ithelp.ithome.com.tw/users/20108045/ironman/2454)
+
 ## 檢測流程
 
 - 以 [GitHub Pages](https://pages.github.com/) 搭建環境
 - 從[資料夾](https://webhd.ncyu.edu.tw/share.cgi?ssid=07WBEfX)抓取最新版本的 html
 - 打開 [Freego](https://www.handicap-free.nat.gov.tw/Download/Detail/1375?Category=52)，輸入網址，並且選擇**單一網頁**，**AA**等級。
 - 使用 [Visual Studio Code](https://code.visualstudio.com/) 修改 html
-- 目前的檢測版本：[v7](https://kevinhsu7361.github.io/NCYU/index2021_v7.html)
+- 目前的檢測版本：[v9](https://kevinhsu7361.github.io/NCYU/index2021_v7.html)
 
 ## flexslider
 
@@ -47,7 +51,7 @@ flexslider_new
 
 #### bulletin_sn=46851 等等
 
-該改 `<h5>` 的位置
+修改 `<h5>` 的位置
 
 ### 20200309
 
