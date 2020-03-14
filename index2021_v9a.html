@@ -53,32 +53,6 @@
     <!--test for css-->
     <style type="text/css">
 
-    a.sr-only {
-    
-    color: black;
-    
-}
-        .sr-only {
-    position: absolute;
-    width: 0.063rem;
-    height: 0.063rem;
-    padding: 0;
-    margin: -0.063rem;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-}
-
         a:hover, a:focus {
             color: #48320a;
         }
@@ -215,12 +189,47 @@
     
     <header class="header-area" style="margin-top: 0px; background-image: url('http://www.ncyu.edu.tw/newsite/images/header_pic/headerfinal.png')">
 
+                <div class="for_accessibility">
+                    <style>
+                        .for_accessibility a {
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            z-index: 99;
+                            width: 1px;
+                            height: 1px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            color: #000;
+                        }
+
+                        .for_accessibility a:focus {
+                            width: auto;
+                            height: auto;
+                            padding: 6px;
+                            background-color: #fff;
+                        }
+                    </style>
+                    <a href="#content_middle" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>
+                    <script>
+                        var $a = $('.for_accessibility a');
+
+                        $a.on('click', function (evt) {
+                            var $href = $($(this).attr('href')),
+                                $target = $href.find('a').eq(0).get(0);
+
+                            setTimeout(function () {
+                                try {
+                                    $target.focus();
+                                } catch (e) {}
+                            }, 0);
+                        });
+                    </script>
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <!--yingli add padding 0px-->
-                        <a href="#content" id="gotocenter" title="跳到主要內容" tabindex="1"
-                            class="sr-only sr-only-focusable">跳到主要內容</a>
 
                     <nav class="navbar navbar-expand-lg" style="padding-left:0px;padding-right:0px">
                         <!-- Logo -->

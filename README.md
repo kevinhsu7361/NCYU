@@ -1,10 +1,17 @@
 ## 檢測流程
 
+
+https://www.handicap-free.nat.gov.tw/Applications
+
+
+
+
+
 - 以 [GitHub Pages](https://pages.github.com/) 搭建環境
 - 從[資料夾](https://webhd.ncyu.edu.tw/share.cgi?ssid=07WBEfX)抓取最新版本的 html
 - 打開 [Freego](https://www.handicap-free.nat.gov.tw/Download/Detail/1375?Category=52)，輸入網址，並且選擇**單一網頁**，**AA**等級。
 - 使用 [Visual Studio Code](https://code.visualstudio.com/) 修改 html
-- 目前的檢測版本：[v9](https://kevinhsu7361.github.io/NCYU/index2021_v9a.html)
+- 目前的檢測版本：[v9a](https://kevinhsu7361.github.io/NCYU/index2021_v9a.html)
 
 ## flexslider
 
