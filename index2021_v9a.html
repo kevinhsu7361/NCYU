@@ -174,7 +174,26 @@
             box-shadow: 0 0 5px #a2af2d;
         }
     </style>
+        <style type="text/css">
+                .for_accessibility a {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 99;
+                width: 1px;
+                height: 1px;
+                white-space: nowrap;
+                overflow: hidden;
+                color: #000;
+                }
 
+                .for_accessibility a:focus {
+                width: auto;
+                height: auto;
+                padding: 6px;
+                background-color: #fff;
+                }
+        </style>
 </head>
 
 <body>
@@ -188,44 +207,11 @@
     <!-- Preloader End -->
     
     <header class="header-area" style="margin-top: 0px; background-image: url('http://www.ncyu.edu.tw/newsite/images/header_pic/headerfinal.png')">
-
+                <!--test-->
                 <div class="for_accessibility">
-                    <style>
-                        .for_accessibility a {
-                            position: absolute;
-                            top: 10px;
-                            left: 10px;
-                            z-index: 99;
-                            width: 1px;
-                            height: 1px;
-                            white-space: nowrap;
-                            overflow: hidden;
-                            color: #000;
-                        }
-
-                        .for_accessibility a:focus {
-                            width: auto;
-                            height: auto;
-                            padding: 6px;
-                            background-color: #fff;
-                        }
-                    </style>
                     <a href="#content_middle" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>
-                    <script>
-                        var $a = $('.for_accessibility a');
+                </div>
 
-                        $a.on('click', function (evt) {
-                            var $href = $($(this).attr('href')),
-                                $target = $href.find('a').eq(0).get(0);
-
-                            setTimeout(function () {
-                                try {
-                                    $target.focus();
-                                } catch (e) {}
-                            }, 0);
-                        });
-                    </script>
-                    </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
