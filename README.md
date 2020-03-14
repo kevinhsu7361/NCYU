@@ -1,7 +1,3 @@
-## 參考教學
-
-[iT 邦幫忙 ─ 實踐無障礙網頁設計](https://ithelp.ithome.com.tw/users/20108045/ironman/2454)
-
 ## 檢測流程
 
 - 以 [GitHub Pages](https://pages.github.com/) 搭建環境
@@ -71,10 +67,25 @@ flexslider_new
 
 設定「[定位點](https://www.handicap-free.nat.gov.tw/Questions/Detail/82?Category=33)」。
 
-進入無障礙網頁，第一次按 `tab` 時，網頁左上角會顯示「跳到主要內容」，但一開始沒按 `tab` 前確不能顯示。
+進入無障礙網頁，第一次按 `tab` 時，網頁左上角會顯示「跳到主要內容」。
+
+重點是：一開始沒按 `tab` 前確不能顯示。
 
 ```html
 <a href="#content" id="gotocenter" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容</a>
 ```
 
 ![](https://i.imgur.com/CsrDKCG.png)
+
+真的很神奇。
+
+## 參考教學
+
+[iT 邦幫忙 ─ 實踐無障礙網頁設計](https://ithelp.ithome.com.tw/users/20108045/ironman/2454)
+
+以下作法會被退件：
+
+用 display:none 隱藏定位點（相當於由顯示中移除，可能導致沒有定位點）
+把 ::: 幾個字改為圖片（Ctrl + F 找不到）
+把 ::: 字體設為極端小（Ctrl + F 找得到，但是不容易看到，也是不行）
+再者，倒是允許把 ::: 文字顏色設為跟背景色相同，無障礙服務網亦如此設計。
