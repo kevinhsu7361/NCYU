@@ -27,9 +27,6 @@
     <meta name="Category.Service" content="300">
     <meta name="Keywords" content="國立嘉義大學,入口網站">
 
-
-    <title>歡迎光臨 國立嘉義大學資訊入口網站</title>
-
     <!-- Favicon  -->
     <title>歡迎光臨 國立嘉義大學資訊入口網站</title>
 
@@ -50,7 +47,6 @@
     <link rel="stylesheet" type="text/css" href="https://www.ncyu.edu.tw/newsite/final/css/slideshow.css" />
     <!-- submenu end -->
 
-    <!--test for css-->
     <style type="text/css">
 
         a:hover, a:focus {
@@ -174,28 +170,29 @@
             box-shadow: 0 0 5px #a2af2d;
         }
     </style>
+        
         <style type="text/css">
 
-.for_accessibility a {
-color: black;
-position: absolute;
-width: 0.063rem;
-height: 0.063rem;
-padding: 0;
-margin: -0.063rem;
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-border: 0;
+        .sr-only {
+    color: black;
+    position: absolute;
+    width: 0.063rem;
+    height: 0.063rem;
+    padding: 0;
+    margin: -0.063rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
-.for_accessibility a:active,
-.for_accessibility a:focus {
-position: static;
-width: auto;
-height: auto;
-margin: 0;
-overflow: visible;
-clip: auto;
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
 }
         </style>
 </head>
@@ -213,7 +210,7 @@ clip: auto;
     <header class="header-area" style="margin-top: 0px; background-image: url('http://www.ncyu.edu.tw/newsite/images/header_pic/headerfinal.png')">
                 <!--test-->
                 <div class="for_accessibility">
-                    <a tabindex="-1" href="#content_middle" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>
+                    <a tabindex="1" href="#content_middle" class="sr-only sr-only-focusable" title="跳到主要內容區塊">跳到主要內容區塊</a>
                 </div>
 
         <div class="container">
