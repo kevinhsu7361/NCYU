@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-        <h1>hello world</h1>
+    <p style="font-size: 32px;">test</p>    
+    <h1>hello world</h1>
         <div>
             <p>hello</p>
         </div>
@@ -15,13 +16,14 @@
 
         <script>
             let enable = true ;
-            document.getElementById("btn1").addEventListener("click", function () {
+            document.getElementById("btn").addEventListener("click", function () {
                 if(enable){
                     let all = document.body.getElementsByTagName("*");
                     for (let i = 0, max = all.length; i < max; i++) {
-                        let style = window.getComputedStyle(all[i],null).getPropertyValue("font-size");
-                        let fontSize = parseFloat(style);
-                        all[i].style.fontSize = (fontSize * 1.5) + "px";                    
+                        //let style = window.getComputedStyle(all[i],null).getPropertyValue("font-size");
+                        //let fontSize = parseFloat(style);
+                        //all[i].style.fontSize = (fontSize * 1.5) + "px";                    
+                        all[i].style.fontSize = '1em';
                     }
                 }
                 enable = false;

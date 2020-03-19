@@ -748,9 +748,10 @@
                 if (enable) {
                     let all = document.body.getElementsByTagName("*");
                     for (let i = 0, max = all.length; i < max; i++) {
-                        let style = window.getComputedStyle(all[i], null).getPropertyValue("font-size");
-                        let fontSize = parseFloat(style);
-                        all[i].style.fontSize = (fontSize * 1.5) + "px";
+                        //let style = window.getComputedStyle(all[i], null).getPropertyValue("font-size");
+                        //let fontSize = parseFloat(style);
+                        //all[i].style.fontSize = (fontSize * 1.5) + "px";
+                        all[i].style.fontSize = '1.5em';
                     }
                 }
                 enable = false;
@@ -760,11 +761,13 @@
                 if(enable){
                     let all = document.body.getElementsByTagName("*");
                     for (let i = 0, max = all.length; i < max; i++) { 
-                        let style=window.getComputedStyle(all[i],null).getPropertyValue("font-size");
-                        let fontSize=parseFloat(style);
-                        all[i].style.fontSize=(fontSize * 2) + "px" ; 
+                        //let style=window.getComputedStyle(all[i],null).getPropertyValue("font-size");
+                        //let fontSize=parseFloat(style);
+                        //all[i].style.fontSize=(fontSize * 2) + "px" ; 
+                        all[i].style.fontSize = '2em';
                     }
                     enable = false;
+                    
                 }
             });
         </script>
