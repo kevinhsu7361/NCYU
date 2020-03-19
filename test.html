@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=i">
+    <title>Document</title>
+</head>
+<body>
+        <h1>hello world</h1>
+        <div>
+            <p>hello</p>
+        </div>
+        <img src="https://i.imgur.com/ggK1MV2.png" alt="test imgur"><br>
+        <button type="button" id="btn">中</button>
+
+        <script>
+            let enable = true ;
+            document.getElementById("btn1").addEventListener("click", function () {
+                if(enable){
+                    let all = document.body.getElementsByTagName("*");
+                    for (let i = 0, max = all.length; i < max; i++) {
+                        let style = window.getComputedStyle(all[i],null).getPropertyValue("font-size");
+                        let fontSize = parseFloat(style);
+                        all[i].style.fontSize = (fontSize * 1.5) + "px";                    
+                    }
+                }
+                enable = false;
+            });          
+        </script>
+</body>
+</html>
