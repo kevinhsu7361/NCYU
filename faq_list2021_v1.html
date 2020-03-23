@@ -331,12 +331,14 @@
         <div class="container">
             <div class="row" >
                <div class="col-md-12 no-padding-h" style="    padding-left: 0px;    padding-right: 0px;">
-                    <ul class="breadcrumb" style="background:#ffffff;margin-top:1.25em;border-radius:0.375em;padding-left:1.25em;padding-right:1.25em;">
+                <h4>    
+                <ul class="breadcrumb" style="background:#ffffff;margin-top:1.25em;border-radius:0.375em;padding-left:1.25em;padding-right:1.25em;">
                     <li><a href="index.aspx" title="首頁" style="color: #e67121;font-size:1em;font-weight:bold;">首頁</a> &gt; 
                     <span style="font-size:1em;font-weight:bold;"><asp:label id="navigate_bar" runat="server"></asp:label></span> 
                     <!--<asp:label id="site_caption" runat="server"></asp:label>-->
                     </li>
                     </ul>
+                </h4><!--20200323-->
                 </div>
             </div>
             <div class="row">
@@ -346,9 +348,9 @@
 <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2E9BAE0B" />
                 <div class="col-md-12" id="printblock" style="background:#ffffff;padding-top:20px;border-radius:12px;">
                     <div class="form-inline">
-						<label  class="col-sm-2 col-form-label">日期範圍</label>
+						<!--20200323--><label  class="col-sm-2 col-form-label" for="d_1">日期範圍</label>
 						<div class="col-sm-5">
-					        <input name="d_1" type="text" value="2016-01-01" id="d_1" onFocus="javascript: if (this.value=='2016-01-01') this.value='';" onBlur="javascript: if (this.value=='') this.value='2016-01-01';" style="FONT-family:新細明體; WIDTH: 140px; HEIGHT: 26px; color: black; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid;BORDER-RIGHT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #ffffff" />												
+					        <input name="d_1" type="text" value="2016-01-01" id="d_1" onFocus="javascript: if (this.value=='2016-01-01') this.value='';" onBlur="javascript: if (this.value=='') this.value='2016-01-01';" style="FONT-family:新細明體; WIDTH: 140px; HEIGHT: 26px; color: black; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid;BORDER-RIGHT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #ffffff" />
                             至
                             <input name="d_2" type="text" value="2022-12-31" id="d_2" onFocus="javascript: if (this.value=='2022-12-31') this.value='';" onBlur="javascript: if (this.value=='') this.value='2022-12-31';" style="FONT-family:新細明體; WIDTH: 140px; HEIGHT: 26px; color: black; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid;BORDER-RIGHT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #ffffff" />
 						    <br/>(格式為YYYY-MM-DD，如：2019-01-01) 	 
@@ -411,13 +413,10 @@
 					    <label  class="col-sm-2 col-form-label">標　　題</label>
 						<div class="col-sm-10">
 						    <input name="keyword" type="text" value="請輸入標題文字" id="keyword" onFocus="javascript: if (this.value=='請輸入標題文字') this.value='';" onBlur="javascript: if (this.value=='') this.value='請輸入標題文字';" style="FONT-family:新細明體; WIDTH: 300px; HEIGHT: 26px; color: black; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid;BORDER-RIGHT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #ffffff" />
-				            <input type="image" name="imagebutton1" id="imagebutton1" onmouseover="javascript:this.src='/images/bot07_f2.gif'" onfocus="javascript: this.src='images/bot07_f2.gif'" onblur="javascript:this.src='/images/bot07.gif'" onmouseout="javascript:this.src='/images/bot07.gif'" src="/images/bot07.gif" align="absmiddle" style="border-width:0px;" />
-                            <!--少AlternateText="確認按鈕，可依條件進行搜尋"-->
+				            <input type="image" name="imagebutton1" id="imagebutton1" onmouseover="javascript:this.src='/images/bot07_f2.gif'" onfocus="javascript: this.src='images/bot07_f2.gif'" onblur="javascript:this.src='/images/bot07.gif'" onmouseout="javascript:this.src='/images/bot07.gif'" src="/images/bot07.gif" align="absmiddle" style="border-width:0px;" alt="確認按鈕，可依條件進行搜尋"/>
+                            <!-- 20200323，少AlternateText="確認按鈕，可依條件進行搜尋"-->
 				        </div>							
                     </div>
-                    
-                    <button type="button" id="btn1">放大1.5倍</button>
-                    <button type="button" id="btn2">放大2倍</button>
                     
                     <div class="table-wrapper">
                         <table width="98%" border="0" cellspacing="0" cellpadding="0" >
@@ -740,39 +739,7 @@
     <!-- Active js -->
     <script type="text/javascript" src="https://www.ncyu.edu.tw/newsite/final/js/active.js"></script>
 
-
-        <script>
-            let enable = true;
-
-            document.getElementById("btn1").addEventListener("click", function () {
-                if (enable) {
-                    let all = document.body.getElementsByTagName("*");
-                    for (let i = 0, max = all.length; i < max; i++) {
-                        let style = window.getComputedStyle(all[i], null).getPropertyValue("font-size");
-                        let fontSize = parseFloat(style);
-                        all[i].style.fontSize = (fontSize * 1.5) + "px";
-                        //all[i].style.fontSize = '1.5em';
-                    }
-                }
-                enable = false;
-            });
-
-            document.getElementById("btn2").addEventListener("click", function () {
-                if(enable){
-                    let all = document.body.getElementsByTagName("*");
-                    for (let i = 0, max = all.length; i < max; i++) { 
-                        let style=window.getComputedStyle(all[i],null).getPropertyValue("font-size");
-                        let fontSize=parseFloat(style);
-                        all[i].style.fontSize=(fontSize * 2) + "px" ; 
-                        //all[i].style.fontSize = '2em';
-                    }
-                    enable = false;
-                    
-                }
-            });
-        </script>
-	
-		<!-- submenu -->
+    <!-- submenu -->
 	<script type="text/javascript">
         $(function () {
         $('[data-submenu]').submenupicker();
