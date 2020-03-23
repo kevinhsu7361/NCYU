@@ -6,28 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    <p style="font-size: 32px;">test</p>    
+    <p style="font-size: 32px;">test</p>
+    <div>
+        <div></div>
+    </div>    
     <h1>hello world</h1>
         <div>
             <p>hello</p>
         </div>
         <img src="https://i.imgur.com/ggK1MV2.png" alt="test imgur"><br>
-        <button type="button" id="btn">中</button>
+        
+        <form action="test.html" method="POST">
+            <input type="submit" value="1.5倍">
+            <input type="submit" value="2倍">
+        </form>
+        
+        <button type="button" id="btn1">1.5倍</button>
+        <button type="button" id="btn2">2倍</button>
 
         <script>
             let enable = true ;
-            document.getElementById("btn").addEventListener("click", function () {
+            document.getElementById("btn1").addEventListener("click", function () {
                 if(enable){
+                    window.onload = function () {
                     let all = document.body.getElementsByTagName("*");
                     for (let i = 0, max = all.length; i < max; i++) {
                         //let style = window.getComputedStyle(all[i],null).getPropertyValue("font-size");
                         //let fontSize = parseFloat(style);
                         //all[i].style.fontSize = (fontSize * 1.5) + "px";                    
                         all[i].style.fontSize = '1em';
-                    }
+                    }};
                 }
                 enable = false;
-            });          
+            });
+
+            document.getElementById("btn2").addEventListener("click", function () {
+                if(enable){
+                    let all = document.body.getElementsByTagName("*");
+                    let length = all.length ;
+                    for (let i = 0, max = all.length; i < max; i++) {
+                        let style=window.getComputedStyle(all[i],null).getPropertyValue("font-size"); 
+                        let fontSize=parseFloat(style);
+                        all[i].style.fontSize=(fontSize * 1.5) + "px" ;
+                        all[i].style.fontSize='1em' ; 
+                    } 
+                } 
+                enable=false; 
+            });
+            let all = document.body.
+            $('input[type=submit][value=1.5倍]').click(function () {
+                alert('hello world');
+                //$.each(all,function(index,value) {
+                //    all[index]
+                //})
+            });
         </script>
 </body>
 </html>
