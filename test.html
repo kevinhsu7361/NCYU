@@ -6,7 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <p style="font-size: 32px;">test</p>
+    <style>
+        .middle{
+            font-size: 1.5em;
+        }
+        .big{
+            font-size: 2em;
+        }
+    </style>
+    <p>test</p>
     <div>
         <div></div>
     </div>    
@@ -16,49 +24,19 @@
         </div>
         <img src="https://i.imgur.com/ggK1MV2.png" alt="test imgur"><br>
         
-        <form action="test.html" method="POST">
-            <input type="submit" value="1.5倍">
-            <input type="submit" value="2倍">
-        </form>
-        
         <button type="button" id="btn1">1.5倍</button>
         <button type="button" id="btn2">2倍</button>
 
-        <script>
-            let enable = true ;
-            document.getElementById("btn1").addEventListener("click", function () {
-                if(enable){
-                    window.onload = function () {
-                    let all = document.body.getElementsByTagName("*");
-                    for (let i = 0, max = all.length; i < max; i++) {
-                        //let style = window.getComputedStyle(all[i],null).getPropertyValue("font-size");
-                        //let fontSize = parseFloat(style);
-                        //all[i].style.fontSize = (fontSize * 1.5) + "px";                    
-                        all[i].style.fontSize = '1em';
-                    }};
-                }
-                enable = false;
-            });
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-            document.getElementById("btn2").addEventListener("click", function () {
-                if(enable){
-                    let all = document.body.getElementsByTagName("*");
-                    let length = all.length ;
-                    for (let i = 0, max = all.length; i < max; i++) {
-                        let style=window.getComputedStyle(all[i],null).getPropertyValue("font-size"); 
-                        let fontSize=parseFloat(style);
-                        all[i].style.fontSize=(fontSize * 1.5) + "px" ;
-                        all[i].style.fontSize='1em' ; 
-                    } 
-                } 
-                enable=false; 
+        <script>
+            $("#btn1").click(function(){
+                $("body").removeClass("big");                
+                $("body").addClass("middle");
             });
-            let all = document.body.
-            $('input[type=submit][value=1.5倍]').click(function () {
-                alert('hello world');
-                //$.each(all,function(index,value) {
-                //    all[index]
-                //})
+            $("#btn2").click(function(){
+                $("body").removeClass("middle");
+                $("body").addClass("big");
             });
         </script>
 </body>

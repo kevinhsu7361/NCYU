@@ -32,3 +32,7 @@ all[i].style.fontSize = '2em';
 ## 附註
 
 我只會寫 vanilla JavaScript，我不會寫 jQuery。
+
+## 添加 `<button>`
+
+第 420 行左右。
