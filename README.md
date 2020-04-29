@@ -34,5 +34,5 @@ h1{
 </style>
 ```
 
-- [首頁](https://kevinhsu7361.github.io/home.html)
-- [常見問題](https://kevinhsu7361.github.io/faq.html)
+- [首頁](https://kevinhsu7361.github.io/NCYU/home.html)
+- [常見問題](https://kevinhsu7361.github.io/NCYU/faq.html)
