@@ -10,11 +10,29 @@
 <!--20200305-->
 <label for="search"></label>
 ```
+---
 
-## 進度
+## 本次的進度
 
-行數 ( 大概位置 ) → 原因及修正
+1. 學姊先看一下效果，是否 OK。
+2. 如果有 html tag 使用 inline style css，要將它移除。
+3. 原因如下，`h1` 最後會呈現 `2rem`。
 
-- 415 左右 → 加上 `alt`，變成 `<input type="image" alt="hello">`
-- 335 → 添加 `<h5>`
-- 351 , 355 , 410 → label 添加 for 屬性
+priority 較高
+
+```html
+<h1 style="font-size:2rem;">Hello World</h1>
+```
+
+priority 較低
+
+```html
+<style>
+h1{
+    font-size: 1rem;
+}
+</style>
+```
+
+- [首頁](https://kevinhsu7361.github.io/home.html)
+- [常見問題](https://kevinhsu7361.github.io/faq.html)
