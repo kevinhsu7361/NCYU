@@ -177,6 +177,27 @@
             border-color: #138496;
             box-shadow: 0 0 5px #a2af2d;
         }
+
+        .sr-only {
+    position: absolute;
+    width: 0.063rem;
+    height: 0.063rem;
+    padding: 0;
+    margin: -0.063rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
     </style>
 
 </head>
@@ -194,7 +215,7 @@
 
 
 
-
+    <a href="#content" id="gotocenter" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容</a>
 
     <header class="header-area" style="margin-top: 0px; background-image: url('http://www.ncyu.edu.tw/newsite/images/header_pic/headerfinal.png')">
 
