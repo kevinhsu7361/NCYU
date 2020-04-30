@@ -2,21 +2,10 @@
 
 頻繁使用 **社群軟體** 溝通，每成功修改掉相似的 bug，就建立一個新版本。
 
-## 註解方式
-
-以**日期**的形式註解。
-
-```html
-<!--20200305-->
-<label for="search"></label>
-```
----
-
 ## 本次的進度
 
-1. 學姊先看一下效果，是否 OK。
-2. 如果有 html tag 使用 inline style css，要將它移除。
-3. 原因如下，`h1` 最後會呈現 `2rem`。
+1. 字體放大。
+2. 如果有 html tag 使用 inline style css，要將它移除。如下方所示，`h1` 最後會呈現 `2rem`。
 
 priority 較高
 
@@ -34,5 +23,16 @@ h1{
 </style>
 ```
 
-- [首頁](https://kevinhsu7361.github.io/NCYU/home.html)
-- [常見問題](https://kevinhsu7361.github.io/NCYU/faq.html)
+3. 新增的程式碼行數
+
+點擊滑鼠右鍵，選擇「檢視網頁原始碼」。
+
+#### [首頁](home.html)
+
+- 339 ~ 341 ( html )
+- 2587 ~ 2617 ( css 與 js )
+
+#### [常見問題](faq.html)
+
+- 323 ~ 325 ( html )
+- 746 ~ 775 ( css 與 js )
