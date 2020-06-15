@@ -73,6 +73,8 @@ h1{
 
 ![](https://i.imgur.com/WSwhPDQ.png)
 
+採用 ajax 的方式，將圖片文字置於不同的頁面。
+
 學校採用 Owl Carousel。
 
 [屏東環保局](https://www.ptepb.gov.tw/Default.aspx)
@@ -81,3 +83,11 @@ h1{
 因為在身心障礙在使用時，
 如果你一直有判斷的動作，
 會有可能讓他們的機器使用上困難。
+
+## 自己曾經嘗試的方法
+
+css transition 與 json 的問題。
+
+[海洋大學](https://www.ncyu.edu.tw/newsite/nsysu5.aspx)
+
+home.html 是以 index2021_v9b.html 改編而成。
