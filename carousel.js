@@ -11,7 +11,7 @@ $(document).ready(function () {
         });
         tabCarousel(special_owl, '.world-catagory-slider', '往左移動', '往右移動')
     
-        let owl = $('.slides').owlCarousel({
+        let owl = $('.second-carousel').owlCarousel({
         items: 4,
         margin: 0,
         loop: true,
@@ -21,5 +21,5 @@ $(document).ready(function () {
         smartSpeed: 1000,
         nav: true
     });
-    tabCarousel(owl, '.slides', '往左移動', '往右移動')
+    tabCarousel(owl, '.second-carousel', '往左移動', '往右移動')
 });
